@@ -6,9 +6,28 @@
 :root {
     font-size: 16;
 }
-
+body {
+}
 #outContainer {
     border: 2px black solid;
-    width: 50vw;
-    height: 20vh;
+    background-color: rgba(255, 0, 0, 0.198);
+    width: 30vw;
+    height: 29vh;
+    margin: 20% auto;
+    position: relative;
+    padding: 0.3rem 0.3rem 0 0.3rem;
+}
+#outContainer > .boxTop {
+    border: 2px blue solid;
+    height: 83%;
+}
+/* input type text  */
+#outContainer > .boxBottom {
+    border: 2px green solid;
+    height: 15%;
+}
+#outContainer > .boxTop .inBox {
+    border: 2px violet dashed;
+    
+
 }
