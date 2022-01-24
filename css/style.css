@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    font-size: 16;
+}
+
+#outContainer {
+    border: 2px black solid;
+    width: 50vw;
+    height: 20vh;
+}
