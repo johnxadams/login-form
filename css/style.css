@@ -23,10 +23,12 @@ body {
     display: flex;
     justify-content:space-between;
 }
-/* input type text  */
+/* input type text for username and email  */
 #outContainer > .boxBottom {
     border: 2px green solid;
     height: 15%;
+    display: flex;
+    justify-content: center;
 }
 #outContainer > .boxTop > .left,
 #outContainer > .boxTop > .right {
@@ -39,4 +41,21 @@ body {
     width: 0;
     height: 80%;
     margin: auto 0;
+}
+#outContainer > .boxTop + .boxBottom > .reFo {
+    display: flex;
+    border: 2px gray dotted;
+    width: 49%;
+}
+#outContainer > .boxTop + .boxBottom > :first-child {
+    
+    justify-content: flex-end;
+    padding-right: 0.3rem;
+}
+#outContainer > .boxTop + .boxBottom > :last-child{
+    padding-left: 0.3rem;
+}
+#outContainer > .boxTop + .boxBottom > #midBottom {
+    border-left: 1px red solid;
+    height: 80%;
 }
