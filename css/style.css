@@ -20,14 +20,16 @@ body {
 #outContainer > .boxTop {
     border: 2px blue solid;
     height: 83%;
+    display: flex;
+    justify-content:space-between;
 }
 /* input type text  */
 #outContainer > .boxBottom {
     border: 2px green solid;
     height: 15%;
 }
-#outContainer > .boxTop .inBox {
-    border: 2px violet dashed;
-    
-
+#outContainer > .boxTop .left,
+#outContainer > .boxTop .right {
+    border: 2px rgb(149, 18, 149) dashed;
+    width: 48%;
 }
