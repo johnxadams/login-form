@@ -28,8 +28,15 @@ body {
     border: 2px green solid;
     height: 15%;
 }
-#outContainer > .boxTop .left,
-#outContainer > .boxTop .right {
+#outContainer > .boxTop > .left,
+#outContainer > .boxTop > .right {
     border: 2px rgb(149, 18, 149) dashed;
     width: 48%;
+}
+
+#outContainer > .boxTop > .middle {
+    border-left: 0.1px rgb(0, 162, 255) solid;
+    width: 0;
+    height: 80%;
+    margin: auto 0;
 }
