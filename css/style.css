@@ -9,14 +9,17 @@
 }
 body {
     font-family: 'Mulish', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #outContainer {
     border: 0.5px black solid;
     background-color: rgba(255, 0, 0, 0.198);
     width: 30vw;
     height: 29vh;
-    margin: 20% auto;
-    position: relative;
     padding: 0.3rem 0.3rem 0 0.3rem;
 }
 #outContainer > .boxTop {
@@ -27,7 +30,7 @@ body {
 }
 /* container for boxBottom  */
 #outContainer > .boxBottom {
-    border: 0.5px green solid;
+    border: 0.5px rgb(24, 83, 24) solid;
     height: 15%;
     display: flex;
     justify-content: center;
@@ -62,6 +65,9 @@ Login button: #65b1ff- Text in the box down #378ee2 Background:#f2f9ff  */
     height: 22%;
     width: 75%;
     font-size: 0.9rem;
+}
+#outContainer > .boxTop > .left > .facebook {
+    background-color: #507bbf ;
 }
 #outContainer > .boxTop > .middle {
     border-left: 0.1px rgb(0, 162, 255) solid;
@@ -105,8 +111,6 @@ OR: #e4e3e7  */
     border: 2px tomato dotted;
     padding: 1rem 0 1rem 0;
     position: relative;
-
-
 }
 #outContainer > .boxTop > .right > form > div > input[type=text], #outContainer > .boxTop > .right > form > div > input[type=password] {
     border: none;
@@ -118,23 +122,41 @@ OR: #e4e3e7  */
     opacity: 1;
 
 }
-#outContainer > .boxTop > .right > form > div > input[type=checkbox] + span{
-    position: absolute;
-    border: 2px blueviolet solid;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+#outContainer > .boxTop > .right > form > div > .checkLabel {
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px green solid;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
-#outContainer > .boxTop > .right > form > div > input[type=checkbox] + span:before {
+#outContainer > .boxTop > .right > form > div > .checkLabel > .span {
+   position: absolute;
+   border: 5px blueviolet solid;
+   background-color: blue;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+#outContainer > .boxTop > .right > form > div > .checkLabel > span:before {
     content: "";
     position: absolute;
     border: 1px red solid;
     height: 1rem;
     width: 1rem;
-    top: .85rem;
-
+    bottom: -0.04rem;
+    left: -0.09rem;
 }
+
+/* #outContainer > .boxTop > .right > form > div > input[type=checkbox] + span:before {
+    content: "";
+
+    top: .90rem;
+    left: -0.3rem;
+
+} */
 
 #outContainer > .boxTop > .right > form > div > input[type=submit] {
     border: none;
