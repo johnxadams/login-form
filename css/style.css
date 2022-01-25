@@ -11,7 +11,7 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 #outContainer {
-    border: 2px black solid;
+    border: 0.5px black solid;
     background-color: rgba(255, 0, 0, 0.198);
     width: 30vw;
     height: 29vh;
@@ -20,14 +20,14 @@ body {
     padding: 0.3rem 0.3rem 0 0.3rem;
 }
 #outContainer > .boxTop {
-    border: 2px blue solid;
+    border: 0.5px blue solid;
     height: 83%;
     display: flex;
     justify-content:space-between;
 }
 /* input type text for username and email  */
 #outContainer > .boxBottom {
-    border: 2px green solid;
+    border: 0.5px green solid;
     height: 15%;
     display: flex;
     justify-content: center;
@@ -36,18 +36,42 @@ body {
 #outContainer > .boxTop > .right {
     border: 2px rgb(149, 18, 149) dashed;
     width: 48%;
+    display: flex;
 }
-
+#outContainer > .boxTop > .left {
+    flex-direction: column;
+    
+}
 #outContainer > .boxTop > .middle {
     border-left: 0.1px rgb(0, 162, 255) solid;
     width: 0;
     height: 80%;
     margin: auto 0;
 }
+#outContainer > .boxTop > .left > .logLink > a,
+#outContainer > .boxTop > .left > .logLink > a:link,
+#outContainer > .boxTop > .left > .logLink > a:visited {
+    text-decoration: none;
+    color: rgb(230, 95, 42);
+    margin: auto 0;
+}
+/* logLink targets the facebook, google, and twitter registration. I have the feeling that I can make position:relative in .logLink in order to create the separation span inside of it to be position:absolute */
+#outContainer > .boxTop > .left > .logLink {
+    border: 2px lightgreen solid;
+    margin: 0.4rem 0 0.4rem 0;
+    height: 22%;
+    width: 75%;
+    font-size: 0.6rem;
+}
+
 #outContainer > .boxTop + .boxBottom > .reFo {
     display: flex;
     border: 2px gray dotted;
     width: 49%;
+    height: 70%;
+    margin: auto 0;
+    font-size: 0.6rem;
+    font-weight: 700;
 }
 #outContainer > .boxTop + .boxBottom > :first-child {
     
@@ -62,7 +86,14 @@ body {
     height: 50%;
     margin: auto 0 ;
 }
-#outContainer > .boxTop + .boxBottom a {
+#outContainer > .boxTop + .boxBottom a:link,
+#outContainer > .boxTop + .boxBottom a:visited
+ {
     text-decoration: none;
-    color: lightblue
+    color: rgb(42, 74, 190)
 }
+#outContainer > .boxTop + .boxBottom a:active {
+    text-decoration: none;
+    color: rgb(190, 114, 42)
+}
+/* change the active color */
