@@ -103,6 +103,10 @@ OR: #e4e3e7  */
     padding: 1rem 0 1rem 0;
 
 }
+#outContainer > .boxTop > .right > form > div > input[type=text], #outContainer > .boxTop > .right > form > div > input[type=password] {
+    border: none;
+    border-bottom: 2px red solid;
+}
 /* Register now | Forgotten? init */
 #outContainer > .boxTop + .boxBottom > .reFo {
     display: flex;
