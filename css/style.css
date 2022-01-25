@@ -64,6 +64,10 @@ body {
 #outContainer > .boxTop > .right > #headline  {
     border: 2px rgb(209, 36, 209) solid;
 }
+/* Current Stage */
+#outContainer > .boxTop > .right > form {
+    border: 2px violet solid;
+}
 
 /* Register now | Forgotten? init */
 #outContainer > .boxTop + .boxBottom > .reFo {
