@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content:space-between;
 }
-/* input type text for username and email  */
+/* container for boxBottom  */
 #outContainer > .boxBottom {
     border: 0.5px green solid;
     height: 15%;
@@ -37,17 +37,9 @@ body {
     border: 2px rgb(149, 18, 149) dashed;
     width: 48%;
     display: flex;
-}
-#outContainer > .boxTop > .left {
     flex-direction: column;
-    
 }
-#outContainer > .boxTop > .middle {
-    border-left: 0.1px rgb(0, 162, 255) solid;
-    width: 0;
-    height: 80%;
-    margin: auto 0;
-}
+
 #outContainer > .boxTop > .left > .logLink > a,
 #outContainer > .boxTop > .left > .logLink > a:link,
 #outContainer > .boxTop > .left > .logLink > a:visited {
@@ -61,16 +53,26 @@ body {
     margin: 0.4rem 0 0.4rem 0;
     height: 22%;
     width: 75%;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
+}
+#outContainer > .boxTop > .middle {
+    border-left: 0.1px rgb(0, 162, 255) solid;
+    width: 0;
+    height: 80%;
+    margin: auto 0;
+}
+#outContainer > .boxTop > .right > #headline  {
+    border: 2px rgb(209, 36, 209) solid;
 }
 
+/* Register now | Forgotten? init */
 #outContainer > .boxTop + .boxBottom > .reFo {
     display: flex;
     border: 2px gray dotted;
     width: 49%;
-    height: 70%;
+    height: 55%;
     margin: auto 0;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     font-weight: 700;
 }
 #outContainer > .boxTop + .boxBottom > :first-child {
