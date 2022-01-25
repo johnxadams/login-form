@@ -35,9 +35,12 @@ body {
 #outContainer > .boxTop > .left,
 #outContainer > .boxTop > .right {
     border: 2px rgb(149, 18, 149) dashed;
-    width: 48%;
+    width: 45%;
     display: flex;
     flex-direction: column;
+}
+#outContainer > .boxTop > .right {
+    position: relative;
 }
 
 #outContainer > .boxTop > .left > .logLink > a,
@@ -47,6 +50,11 @@ body {
     color: rgb(230, 95, 42);
     margin: auto 0;
 }
+/* #e4e3e7
+Facebook #507bbf - Google #db4a30 - Twitter #65cdf2
+Login button: #65b1ff- Text in the box down #378ee2 Background:#f2f9ff  */
+
+
 /* logLink targets the facebook, google, and twitter registration. I have the feeling that I can make position:relative in .logLink in order to create the separation span inside of it to be position:absolute */
 #outContainer > .boxTop > .left > .logLink {
     border: 2px lightgreen solid;
@@ -61,12 +69,32 @@ body {
     height: 80%;
     margin: auto 0;
 }
+#outContainer > .boxTop > .right:before {
+    content: "OR";
+    width: 2.3rem;
+    height: 2.3rem;
+    border: 2px yellowgreen solid ;
+    border-radius: 50%;
+    position: absolute;
+    top: 41%;
+    left: -20.5%;
+    /* text-align: center; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
 #outContainer > .boxTop > .right > #headline  {
     border: 2px rgb(209, 36, 209) solid;
 }
+
+/* Remember me: #7c7b83 
+Sign in with: #444155
+OR: #e4e3e7  */
 /* Current Stage */
 #outContainer > .boxTop > .right > form {
     border: 2px violet solid;
+    height: 70%;
 }
 
 /* Register now | Forgotten? init */
@@ -98,6 +126,9 @@ body {
     text-decoration: none;
     color: rgb(42, 74, 190)
 }
+/* a:any-link, a:any-link:visited {
+    text-decoration: none;
+} */
 #outContainer > .boxTop + .boxBottom a:active {
     text-decoration: none;
     color: rgb(190, 114, 42)
