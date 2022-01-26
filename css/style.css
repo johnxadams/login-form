@@ -14,6 +14,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
+    
 }
 #outContainer {
     border: 0.5px black solid;
@@ -198,3 +200,32 @@ OR: #e4e3e7  */
     color: rgb(190, 114, 42)
 }
 /* change the active color */
+
+
+
+
+/* flexBoxing */
+.parentFlex {
+    height: 50vh;
+    width: 70vw;
+    border: 1px violet solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 4rem 0;
+}
+.flexContainer1, .flexContainer2, .flexContainer3 {
+    border: 2px green solid;
+    height: 30%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flexChild1, .flexChild2, .flexChild3 {
+    border: 2px red solid;
+    background-color: #ccc;
+    height: 30%;
+    width: 30%;
+}
