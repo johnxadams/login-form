@@ -17,23 +17,26 @@ body {
 }
 #outContainer {
     border: 0.5px black solid;
-    background-color: rgba(255, 0, 0, 0.198);
+    background-color: rgb(255, 255, 255);
     width: 30vw;
     height: 29vh;
     padding: 0.3rem 0.3rem 0 0.3rem;
 }
 #outContainer > .boxTop {
-    border: 0.5px blue solid;
+    border: 0.5px rgb(161, 161, 161) solid;
+    background-color: white;
     height: 83%;
     display: flex;
     justify-content:space-between;
 }
 /* container for boxBottom  */
 #outContainer > .boxBottom {
-    border: 0.5px rgb(24, 83, 24) solid;
+    border: 0.5px rgb(161, 161, 161) solid;
+    border-top: none;
     height: 15%;
     display: flex;
     justify-content: center;
+
 }
 #outContainer > .boxTop > .left,
 #outContainer > .boxTop > .right {
@@ -41,6 +44,8 @@ body {
     width: 45%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #outContainer > .boxTop > .right {
     position: relative;
@@ -91,9 +96,8 @@ Login button: #65b1ff- Text in the box down #378ee2 Background:#f2f9ff  */
     align-items: center;   
 }
 #outContainer > .boxTop > .right > #headline  {
-    border: 2px rgb(209, 36, 209) solid;
-    text-align: center;
-    margin-top: 4%;
+    font-size: 1.25rem;
+    color: #444155;
 }
 
 /* Remember me: #7c7b83 
