@@ -77,25 +77,27 @@ Login button: #65b1ff- Text in the box down #378ee2 Background:#f2f9ff  */
     background-color: #507bbf ;
 }
 #outContainer > .boxTop > .middle {
-    border-left: 0.1px rgb(0, 162, 255) solid;
+    border: 0.1px rgb(212, 212, 212) solid;
     width: 0;
     height: 80%;
     margin: auto 0;
 }
 #outContainer > .boxTop > .right:before {
     content: "OR";
+    color: rgb(212, 212, 212);
+    font-weight: bold;
     width: 2.3rem;
     height: 2.3rem;
-    border: 2px yellowgreen solid ;
+    border: 2px rgb(212, 212, 212) solid ;
     border-radius: 50%;
     position: absolute;
     top: 41%;
-    left: -20.5%;
+    left: -19.9%;
     /* text-align: center; */
     background-color: white;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center; 
 }
 #outContainer > .boxTop > .right > #headline  {
     font-size: 1.25rem;
@@ -175,11 +177,16 @@ input[type=checkbox] {
 } */
 
 #outContainer > .boxTop > .right > form > div > input[type=submit] {
-    border: 2px rgb(110, 126, 110) solid;
     border-radius: 9%;
     height: 2.2rem;
     width: 5rem;
     margin-left: 0.8rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.02rem;
+    background-color: rgb(82, 167, 216);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
     
 }
 #outContainer > .boxTop > .right > form > div:nth-child(3) {
@@ -187,12 +194,7 @@ input[type=checkbox] {
     justify-content: space-between;
     align-items: center;
 }
-#outContainer > .boxTop > .right > form > div:nth-child(3) > input[value=LOGIN]{
-    color: rgb(255, 255, 255);
-    letter-spacing: 0.02rem;
-    background-color: rgb(82, 167, 216);
-    font-weight: bold;
-}
+
 /* Register now | Forgotten? init */
 #outContainer > .boxTop + .boxBottom > .reFo {
     display: flex;
