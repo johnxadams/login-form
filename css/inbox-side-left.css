@@ -1,0 +1,49 @@
+
+#outContainer > .boxTop > .left > .logLink > a,
+#outContainer > .boxTop > .left > .logLink > a:link,
+#outContainer > .boxTop > .left > .logLink > a:visited {
+    text-decoration: none;
+    color: rgb(230, 95, 42);
+    margin: auto 0;
+}
+/* #e4e3e7
+Facebook #507bbf - Google #db4a30 - Twitter #65cdf2
+Login button: #65b1ff- Text in the box down #378ee2 Background:#f2f9ff  */
+
+
+/* logLink targets the facebook, google, and twitter registration. I have the feeling that I can make position:relative in .logLink in order to create the separation span inside of it to be position:absolute */
+#outContainer > .boxTop > .left > .logLink {
+    border: 2px lightgreen solid;
+    margin: 0.4rem 0 0.4rem 0;
+    height: 22%;
+    width: 75%;
+    font-size: 0.9rem;
+}
+#outContainer > .boxTop > .left > .facebook {
+    background-color: #507bbf ;
+
+
+}
+#outContainer > .boxTop > .left > .twitter {
+    background-color: #65cdf2 ;
+}
+#outContainer > .boxTop > .left > .google {
+    background-color: #db4a30 ;
+}
+/* .facebook a {
+    background-color: burlywood;
+} */
+.left > .facebook, .left > .google, .left > .twitter {
+    display: flex;
+    align-items: center;
+    /* margin-left: 5rem; */
+
+}
+/* we're gonna, position relativ all boxes, and make only the Pipe position absolute. Befroe that I'll adjust the Logo and the  anchor symetric. And Also I can put the  logo back into the anchor. */
+.pipe {
+    border-left: 2px white solid;
+    height: 60%;
+}
+.facebook > a, .google > a, .twitter > a {
+    order: 1
+}

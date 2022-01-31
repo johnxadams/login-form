@@ -1,0 +1,46 @@
+/* container for boxBottom  */
+#outContainer > .boxBottom {
+    background-color: rgb(251, 254, 255);
+    border-top: none;
+    height: 15%;
+    justify-content: center;
+
+}
+
+/* Register now | Forgotten? init */
+#outContainer > .boxTop + .boxBottom > .reFo {
+    display: flex;
+    border: 2px gray dotted;
+    width: 49%;
+    height: 55%;
+    margin: auto 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+#outContainer > .boxTop + .boxBottom > :first-child {
+    
+    justify-content: flex-end;
+    padding-right: 0.3rem;
+}
+#outContainer > .boxTop + .boxBottom > :last-child{
+    padding-left: 0.3rem;
+}
+#outContainer > .boxTop + .boxBottom > #midBottom {
+    border-left: 1px red solid;
+    height: 50%;
+    margin: auto 0 ;
+}
+#outContainer > .boxTop + .boxBottom a:link,
+#outContainer > .boxTop + .boxBottom a:visited
+ {
+    text-decoration: none;
+    color: rgb(42, 74, 190)
+}
+/* a:any-link, a:any-link:visited {
+    text-decoration: none;
+} */
+#outContainer > .boxTop + .boxBottom a:active {
+    text-decoration: none;
+    color: rgb(190, 114, 42)
+}
+/* change the active color */
