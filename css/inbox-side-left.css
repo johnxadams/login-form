@@ -3,8 +3,9 @@
 #outContainer > .boxTop > .left > .logLink > a:link,
 #outContainer > .boxTop > .left > .logLink > a:visited {
     text-decoration: none;
-    color: rgb(230, 95, 42);
+    color: rgb(105, 62, 45);
     margin: auto 0;
+    font-weight: bold;;
 }
 /* #e4e3e7
 Facebook #507bbf - Google #db4a30 - Twitter #65cdf2
@@ -13,11 +14,14 @@ Login button: #65b1ff- Text in the box down #378ee2 Background:#f2f9ff  */
 
 /* logLink targets the facebook, google, and twitter registration. I have the feeling that I can make position:relative in .logLink in order to create the separation span inside of it to be position:absolute */
 #outContainer > .boxTop > .left > .logLink {
-    border: 2px lightgreen solid;
+    /* border: 2px lightgreen solid; */
     margin: 0.4rem 0 0.4rem 0;
     height: 22%;
     width: 75%;
     font-size: 0.9rem;
+    position: relative;
+    box-shadow: 1px 1px 2px gray;
+    border-radius: 3px;
 }
 #outContainer > .boxTop > .left > .facebook {
     background-color: #507bbf ;
@@ -43,7 +47,27 @@ Login button: #65b1ff- Text in the box down #378ee2 Background:#f2f9ff  */
 .pipe {
     border-left: 2px white solid;
     height: 60%;
+    position: absolute;
+    left: 20%;
+
 }
-.facebook > a, .google > a, .twitter > a {
-    order: 1
+/* .facebook > a, .google > span, .twitter > a {
+    order: 1;
+    margin-left: 15%;
+} */
+/* .google > a > span {
+    background-color: white;
+    width: 90%;
+    border: 1px black solid;
+} */
+
+.fab {
+    margin: 0 0 0 6%;
+}
+.facebook a > span,
+.google a > span,
+.twitter a > span {
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
 }
