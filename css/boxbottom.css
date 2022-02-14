@@ -10,7 +10,7 @@
 /* Register now | Forgotten? init */
 #outContainer > .boxTop + .boxBottom > .reFo {
     display: flex;
-    border: 2px gray dotted;
+    /* border: 2px gray dotted; */
     width: 49%;
     height: 55%;
     margin: auto 0;
@@ -26,7 +26,7 @@
     padding-left: 0.3rem;
 }
 #outContainer > .boxTop + .boxBottom > #midBottom {
-    border-left: 1px red solid;
+    border-left: 2px rgb(179, 179, 179) solid;
     height: 50%;
     margin: auto 0 ;
 }
@@ -41,6 +41,7 @@
 } */
 #outContainer > .boxTop + .boxBottom a:active {
     text-decoration: none;
-    color: rgb(190, 114, 42)
+    color: rgb(83, 83, 83);
+    transition: .6s;
 }
 /* change the active color */
